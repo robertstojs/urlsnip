@@ -1,7 +1,7 @@
 # urlsnip
 
 <img src="./img/logo.svg" align="right"
-     alt="urlsnip logo by Robert Štojs" width="192" height="192">
+     alt="urlsnip logo by Robert Štojs" width="128" height="192">
 
 urlsnip is a tiny URL shortening and redirection program written in Go. It intercepts web requests and instantly redirects them according to a list of regular expression rules.
 
@@ -22,6 +22,7 @@ urlsnip is a tiny URL shortening and redirection program written in Go. It inter
 ```
 
 ```shell
+# building
 git clone https://github.com/robertstojs/urlsnip.git
 cd urlsnip
 go build
