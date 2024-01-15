@@ -1,0 +1,18 @@
+[
+    {
+        "ShortURL": "short1",
+        "OriginalURL": "https://example.com",
+        "RegexPattern": ""
+    },
+    {
+        "ShortURL": "short2",
+        "OriginalURL": "https://example.org",
+        "RegexPattern": "^regex.*$"
+    },
+    {
+        "ShortURL": "blog-pattern",
+        "OriginalURL": "https://example.com/blog-page",
+        "RegexPattern": "^blog[0-9]+$"
+    }
+]
+
