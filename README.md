@@ -22,7 +22,6 @@ urlsnip is a tiny URL shortening and redirection program written in Go. It inter
 ```
 
 ```shell
-# building
 git clone https://github.com/robertstojs/urlsnip.git
 cd urlsnip
 go build
