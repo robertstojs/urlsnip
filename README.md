@@ -1,4 +1,6 @@
 # urlsnip
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Build](https://github.com/robertstojs/urlsnip/actions/workflows/go.yml/badge.svg)
 
 <img src="./img/logo.svg" align="right"
      alt="urlsnip logo by Robert Štojs" background-color="white" width="192">
