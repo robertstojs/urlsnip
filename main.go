@@ -72,7 +72,7 @@ func redirectHandler(w http.ResponseWriter, r *http.Request) {
             }
             if matched {
                 http.Redirect(w, r, mapping.OriginalURL, http.StatusFound)
-                logMessage := fmt.Sprintf("Redirected via regex '%s' to '%s' using pattern '%s'", requestedURL, mapping.OriginalURL, mapping.RegexPattern)
+                logMessage := fmt.Sprintf("Redirected via route '%s' to '%s' using pattern '%s'", requestedURL, mapping.OriginalURL, mapping.RegexPattern)
                 log.Println(logMessage)
                 sysLogger.Info(logMessage)
                 return
