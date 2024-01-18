@@ -12,9 +12,9 @@ import (
 )
 
 type URLMapping struct {
-    ShortURL     string `json:"shortURL"`
-    OriginalURL  string `json:"originalURL"`
-    RegexPattern string `json:"regexPattern,omitempty"`
+    RedirectPath    string `json:"redirectPath"`
+    DestinationURL  string `json:"destinationURL"`
+    RegexPattern    string `json:"regexPattern,omitempty"`
 }
 
 var (
@@ -54,9 +54,9 @@ func redirectHandler(w http.ResponseWriter, r *http.Request) {
     requestedURL := r.URL.Path[1:]
 
     for _, mapping := range urlMappings {
-        if mapping.ShortURL == requestedURL {
-            http.Redirect(w, r, mapping.OriginalURL, http.StatusFound)
-            logMessage := fmt.Sprintf("Redirected '%s' to '%s'", requestedURL, mapping.OriginalURL)
+        if mapping.RedirectPath == requestedURL {
+            http.Redirect(w, r, mapping.DestinationURL, http.StatusFound)
+            logMessage := fmt.Sprintf("Redirected '%s' to '%s'", requestedURL, mapping.DestinationURL)
             log.Println(logMessage)
             sysLogger.Info(logMessage)
             return
@@ -71,8 +71,8 @@ func redirectHandler(w http.ResponseWriter, r *http.Request) {
                 continue
             }
             if matched {
-                http.Redirect(w, r, mapping.OriginalURL, http.StatusFound)
-                logMessage := fmt.Sprintf("Redirected via route '%s' to '%s' using pattern '%s'", requestedURL, mapping.OriginalURL, mapping.RegexPattern)
+                http.Redirect(w, r, mapping.DestinationURL, http.StatusFound)
+                logMessage := fmt.Sprintf("Redirected via route '%s' to '%s' using pattern '%s'", requestedURL, mapping.DestinationURL, mapping.RegexPattern)
                 log.Println(logMessage)
                 sysLogger.Info(logMessage)
                 return
