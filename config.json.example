@@ -1,17 +1,17 @@
 [
     {
-        "ShortURL": "short1",
-        "OriginalURL": "https://example.com",
+        "RedirectPath": "short1",
+        "DestinationURL": "https://example.com",
         "RegexPattern": ""
     },
     {
-        "ShortURL": "short2",
-        "OriginalURL": "https://example.org",
+        "RedirectPath": "short2",
+        "DestinationURL": "https://example.org",
         "RegexPattern": "^regex.*$"
     },
     {
-        "ShortURL": "blog-pattern",
-        "OriginalURL": "https://example.com/blog-page",
+        "RedirectPath": "blog-pattern",
+        "DestinationURL": "https://example.com/blog-page",
         "RegexPattern": "^blog[0-9]+$"
     }
 ]
