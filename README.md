@@ -2,8 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ![Build](https://github.com/robertstojs/urlsnip/actions/workflows/build.yml/badge.svg)
 
-<img src="./img/logo.svg" align="right"
-     alt="urlsnip logo by Robert Štojs" background-color="white" width="156px">
+<img src="./img/logo.svg" align="right" width="156px">
 
 urlsnip is a tiny URL shortener and routing program written in Go. It intercepts web requests and instantly redirects them according to a list of regular expression rules.
 
@@ -24,25 +23,7 @@ urlsnip is a tiny URL shortener and routing program written in Go. It intercepts
 ```
 
 ```shell
-# building
 git clone https://github.com/robertstojs/urlsnip.git
 cd urlsnip
 go build
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
