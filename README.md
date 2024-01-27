@@ -3,7 +3,7 @@
 ![Build](https://github.com/robertstojs/urlsnip/actions/workflows/build.yml/badge.svg)
 
 <img src="./img/logo.svg" align="right"
-     alt="urlsnip logo by Robert Štojs" background-color="white" width="192">
+     alt="urlsnip logo by Robert Štojs" background-color="white" width="156px">
 
 urlsnip is a tiny URL shortener and routing program written in Go. It intercepts web requests and instantly redirects them according to a list of regular expression rules.
 
